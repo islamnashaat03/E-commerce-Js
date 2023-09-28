@@ -1,0 +1,97 @@
+// // @font-face {
+// //   font-family: 'din-font';
+// //   src: url('fonts/Din-font/din-font.eot');
+// //   src: url('fonts/Din-font/din-font.eot?#iefix') format('embedded-opentype'),
+// //     url('fonts/Din-font/din-font.otf') format('otf'),
+// //     url('fonts/Din-font/din-font.svg#din-font') format('svg'),
+// //     url('fonts/Din-font/din-font.ttf') format('truetype'),
+// //     url('fonts/Din-font/din-font.woff') format('woff'),
+// //     url('fonts/Din-font/din-font.woff2') format('woff2');
+// // }
+
+// // @font-face {
+// //   font-family: 'Israr-Syria';
+// //   src: url('fonts/israr-font/Israr-Syria.eot');
+// //   src: url('fonts/israr-font/Israr-Syria.eot?#iefix') format('embedded-opentype'),
+// //     url('fonts/israr-font/Israr-Syria.otf') format('otf'),
+// //     url('fonts/israr-font/Israr-Syria.svg#Israr-Syria') format('svg'),
+// //     url('fonts/israr-font/Israr-Syria.ttf') format('truetype'),
+// //     url('fonts/israr-font/Israr-Syria.woff2') format('woff2'),
+// //     url('fonts/israr-font/Israr-Syria.woff') format('woff');
+// // }
+
+// // @font-face {
+// //   font-family: 'geometric-font';
+// //   src: url('fonts/Geometric-font/geometric-font.eot');
+// //   src: url('fonts/Geometric-font/geometric-font.eot?#iefix') format('embedded-opentype'),
+// //     url('fonts/Geometric-font/geometric-font.otf') format('otf'),
+// //     url('fonts/Geometric-font/geometric-font.svg#geometric-font') format('svg'),
+// //     url('fonts/Geometric-font/geometric-font.ttf') format('truetype'),
+// //     url('fonts/Geometric-font/geometric-font.woff') format('woff'),
+// //     url('fonts/Geometric-font/geometric-font.woff2') format('woff2');
+// // }
+
+// // @font-face {
+// //   font-family: 'Cairo-Regular';
+// //   src: url('fonts/Cairo-font/Cairo-Regular.eot');
+// //   src: url('fonts/Cairo-font/Cairo-Regular.eot?#iefix') format('embedded-opentype'),
+// //     url('fonts/Cairo-font/Cairo-Regular.otf') format('otf'),
+// //     url('fonts/Cairo-font/Cairo-Regular.svg#Cairo-Regular') format('svg'),
+// //     url('fonts/Cairo-font/Cairo-Regular.ttf') format('truetype'),
+// //     url('fonts/Cairo-font/Cairo-Regular.woff') format('woff'),
+// //     url('fonts/Cairo-font/Cairo-Regular.woff2') format('woff2');
+// //   font-weight: normal;
+// //   font-style: normal;
+// //   font-display: swap;
+// // }
+
+// // @font-face {
+// //   font-family: 'GE-SS-Two';
+// //   src: url('fonts/Ge-font/GESSTwoBold-Bold.eot');
+// //   src: url('fonts/Ge-font/GESSTwoBold-Bold.eot?#iefix') format('embedded-opentype'),
+// //     url('fonts/Ge-font/GESSTwoBold-Bold.otf') format('otf'),
+// //     url('fonts/Ge-font/GESSTwoBold-Bold.svg#GESSTwoBold-Bold') format('svg'),
+// //     url('fonts/Ge-font/GESSTwoBold-Bold.ttf') format('truetype'),
+// //     url('fonts/Ge-font/GESSTwoBold-Bold.woff') format('woff'),
+// //     url('fonts/Ge-font/GESSTwoBold-Bold.woff2') format('woff2');
+// //   font-weight: normal;
+// //   font-style: normal;
+// //   font-display: swap;
+// // }
+
+// @font-face {
+//   font-family: 'ReadexPro-Regular';
+//   src: url('fonts/ReadexPro-font/ReadexPro-Regular.eot');
+//   src: url('fonts/ReadexPro-font/ReadexPro-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('fonts/ReadexPro-font/ReadexPro-Regular.otf') format('otf'),
+//     url('fonts/ReadexPro-font/ReadexPro-Regular.svg#ReadexPro-Regular') format('svg'),
+//     url('fonts/ReadexPro-font/ReadexPro-Regular.ttf') format('truetype'),
+//     url('fonts/ReadexPro-font/ReadexPro-Regular.woff') format('woff'),
+//     url('fonts/ReadexPro-font/ReadexPro-Regular.woff2') format('woff2');
+// }
+
+
+$transition:all .5s ease-in-out;
+// $transition3:all .3s ease-in-out;
+// $transition7:all .7s ease-in-out;
+// // $fontDin:'din-font';
+// // $fontCairo:'Cairo-Regular';
+// $fontReadex:'ReadexPro-Regular';
+// // $fontIsrar:'Israr-Syria';
+// // $fontGeometric:'geometric-font';
+// // $fontGeSs:'GE-SS-Two';
+// $textColor:#707070;
+// $mainColor:#008DB9;
+// $lightMainColor:#E6CA5533;
+// $backgroundColor:rgb(248, 249, 245);
+// // $goldColor:#CFAD7E;
+// $yellwoColor:#E6CA55;
+// $margin:50px;
+
+
+
+@mixin flex-d($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
