@@ -1,4 +1,11 @@
+// SELECT LOADING DIV
 loadingDiv = document.querySelector('.page-loading');
+
+// SELCET HAMBURGER ICON
+hamburgerIcon = document.querySelector('.nav-bar .toggle-btn');
+navbarMobile = document.querySelector('.navbar-mobile');
+overlayAll = document.querySelector('.overlay-all');
+closeBtn = document.querySelector('.close-btn');
 
 // PRE LOADING Function
 setTimeout(function () {
@@ -9,3 +16,19 @@ setTimeout(function () {
     loadingDiv.style.display = 'none';
   }, 100);
 }, 4000);
+
+// NAV BAR MOBILE OPEN AN CLOSE
+function closeNavBar() {
+  navbarMobile.classList.remove('active');
+  overlayAll.classList.remove('active');
+}
+hamburgerIcon.addEventListener('click', function () {
+  navbarMobile.classList.add('active');
+  overlayAll.classList.add('active');
+});
+overlayAll.addEventListener('click', function () {
+  closeNavBar();
+});
+closeBtn.addEventListener('click', function () {
+  closeNavBar();
+});

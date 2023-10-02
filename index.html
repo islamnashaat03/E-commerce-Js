@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IMPORT BOOTSTRAP GRID LAYOUT  -->
     <link rel="stylesheet" href="content/css/bootstrap-grid.min.css">
+        <!-- IMPORT FONT AWESOME STYLE  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- IMPORT MY STYLE CSS  -->
     <link rel="stylesheet" href="content/css/style.css">
     
     <title>Nashaat E-commerce</title>
@@ -27,7 +32,7 @@
 </div>
 
 <!-- START NAVBAR  -->
-
+<div class="overlay-all overlay"></div>
 <nav>
   <div class="container">
     <div class="upper-bar"></div>
@@ -41,16 +46,40 @@
           </a>
         </li>
         </ul>
-        <div class="toggle-btn"></div>
+        <div class="toggle-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
     </div>
   </div>
-
+  <div class="navbar-mobile">
+    <div class="nav-flex">
+      <a href="#" class="navbar-brand">
+        <!-- LOGO -->
+        <img src="" alt="">
+      </a>
+      <a class="btn close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </a>
+    </div>
+    <ul class="navbar-links">
+      <li>
+        <a href="#">
+          Home
+      </a>
+    </li>
+    </ul>
+  </div>
+  <!-- END NAVBAR MOBILE  -->
 </nav>
 
-<section class="hero-section">
+<main class="home-page">
+  <section class="hero-section">
   
-</section>
+  </section>
+</main>
 
 
 
@@ -58,9 +87,11 @@
 
 
 
-
-
-
+<!-- IMPORT JQUERRY  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- IMPORT OWL CAROUSEL  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- iIMPORT MY SCRIPTS  -->
     <script src="content/js/main.js"></script>
 </body>
 </html>

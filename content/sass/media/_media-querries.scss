@@ -1,0 +1,101 @@
+@media screen and (max-width:1920px) {
+  .nav-bar {
+    .nav-flex {
+
+      .menu-btn {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-mobile {
+    &.active {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    opacity: 0;
+    visibility: hidden;
+  }
+
+}
+
+@media screen and (max-width:1199px) {
+  .nav-bar {
+    position: relative;
+
+    .nav-flex {
+      gap: 15px;
+      // flex-wrap: wrap;
+
+      .navbar-brand {
+        img {
+          // width: 165px;
+        }
+      }
+
+      .navbar-links {
+        display: none;
+      }
+
+
+      .toggle-btn {
+        display: flex;
+
+      }
+
+      .contact-btn {
+        display: none;
+      }
+
+      .icons {
+        margin-inline-start: auto;
+        font-size: 24px;
+        font-weight: bold;
+        gap: 10px;
+
+        // margin-right: auto;
+        // margin-left: 0;
+        .main-btn {
+          // display: none;
+          min-width: 90px;
+        }
+      }
+    }
+  }
+
+  .navbar-mobile {
+    &.active {
+      opacity: 1;
+      visibility: visible;
+
+      .main-btn {
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        min-width: 120px;
+      }
+    }
+
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+@media screen and (max-width:991px) {
+  .col--edit {
+    margin-bottom: 30px;
+  }
+
+  .nav-bar .nav-flex .languages {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+
+}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:576px) {}
