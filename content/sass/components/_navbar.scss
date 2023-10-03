@@ -1,7 +1,43 @@
 nav {
-  background-color: $mainColor;
-  padding: 10px 0;
+  background-color: #000;
+  padding: 20px 0;
   color: $textColor;
+
+  .upper-bar {
+    @include flex-d(center, space-between);
+
+    gap: 20px;
+
+    .logo {
+      width: 250px;
+    }
+
+    .search-form {
+      flex: 0 0 65%;
+
+      form {
+        width: 100%;
+
+        input {
+          width: 100%;
+          min-height: 45px;
+          padding-inline-start: 15px;
+
+          &:focus {
+            border: 1px solid $mainColor;
+            outline: 0;
+            box-shadow: 0 0 3px 3px $mainColor;
+          }
+        }
+      }
+    }
+
+    .icons {
+      @include flex-d(center, space-between);
+      gap: 15px;
+      color: #fff;
+    }
+  }
 
   .nav-bar {
     // padding: 15px 0;
@@ -18,9 +54,13 @@ nav {
         top: 18px;
       }
 
+      .search-form {
+        display: none
+      }
+
       .navbar-links {
-        @include flex-d(center, space-between);
-        gap: 10px;
+        @include flex-d(center, center);
+        gap: 20px;
         flex: 1;
         // flex-wrap: wrap;
 
@@ -32,7 +72,7 @@ nav {
             @include flex-d(center, center);
             gap: 3px;
             padding: 5px 0;
-            font-size: 13px;
+            font-size: 18px;
             transition: $transition;
             border-radius: 6px;
             font-weight: bold;
@@ -53,7 +93,7 @@ nav {
             // }
 
             &:hover {
-              color: #fff;
+              color: $mainColor;
               transition: $transition;
               // color: $mainColor;
 
@@ -61,7 +101,7 @@ nav {
             }
 
             &.active {
-              color: #fff;
+              color: $mainColor;
               font-weight: bold;
               transition: $transition;
               // color: $mainColor;

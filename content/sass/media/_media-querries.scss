@@ -84,6 +84,36 @@
 }
 
 @media screen and (max-width:991px) {
+  nav {
+    .upper-bar {
+      .navbar-brand {
+        img {
+          width: 100px;
+        }
+      }
+
+      .search-form {
+        display: none;
+      }
+    }
+
+    .nav-bar {
+      .nav-flex {
+        .navbar-links {
+          display: none;
+
+        }
+
+        .search-form {
+          display: block;
+        }
+      }
+
+
+
+    }
+  }
+
   .col--edit {
     margin-bottom: 30px;
   }
