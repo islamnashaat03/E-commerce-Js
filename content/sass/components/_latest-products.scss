@@ -1,14 +1,18 @@
 .latest-products {
   @extend.sec-p;
 
-  .latest-products-slider {
-    .owl-stage-outer {
-      padding: 12px 0;
 
-      .item {
-        width: 95%;
-        margin: auto;
-      }
+}
+
+
+.latest-products-slider,
+.best-seller-slider {
+  .owl-stage-outer {
+    padding: 12px 0;
+
+    .item {
+      width: 95%;
+      margin: auto;
     }
   }
 }

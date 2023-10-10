@@ -2,6 +2,7 @@
   @extend.sec-p;
 
   .wrapper {
+    @include grid-wrapper(225px);
 
     li {
       // aspect-ratio: 1 / 1;

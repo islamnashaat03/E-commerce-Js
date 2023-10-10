@@ -88,7 +88,7 @@
     .upper-bar {
       .navbar-brand {
         img {
-          width: 100px;
+          width: 55px;
         }
       }
 
@@ -112,6 +112,10 @@
 
 
     }
+  }
+
+  header .hero-section {
+    height: auto;
   }
 
   .col--edit {

@@ -5,6 +5,7 @@ nav {
 
   .upper-bar {
     @include flex-d(center, space-between);
+    margin-bottom: 10px;
 
     gap: 20px;
 
@@ -17,6 +18,7 @@ nav {
 
       form {
         width: 100%;
+        position: relative;
 
         input {
           width: 100%;
@@ -28,6 +30,16 @@ nav {
             outline: 0;
             box-shadow: 0 0 3px 3px $mainColor;
           }
+        }
+
+        .btn {
+          background: transparent;
+          color: #000;
+          position: absolute;
+          top: 50%;
+          inset-inline-end: 25px;
+          transform: translate(0px, -50%);
+          font-size: 18px;
         }
       }
     }
@@ -45,7 +57,7 @@ nav {
     .nav-flex {
       @include flex-d(center, space-between);
       gap: 12px;
-      height: 70px;
+      // height: 70px;
 
 
       .navbar-brand {

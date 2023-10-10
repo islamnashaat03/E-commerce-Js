@@ -361,6 +361,9 @@ header .hero-section {
   height: 100vh;
   overflow: hidden;
 }
+header .hero-section .image-wrap {
+  height: 100%;
+}
 header .hero-section .image-wrap img {
   -o-object-position: center;
      object-position: center;
@@ -388,6 +391,7 @@ nav .upper-bar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
   gap: 20px;
 }
 nav .upper-bar .logo {
@@ -400,6 +404,7 @@ nav .upper-bar .search-form {
 }
 nav .upper-bar .search-form form {
   width: 100%;
+  position: relative;
 }
 nav .upper-bar .search-form form input {
   width: 100%;
@@ -412,6 +417,16 @@ nav .upper-bar .search-form form input:focus {
   outline: 0;
   -webkit-box-shadow: 0 0 3px 3px #CAB748;
           box-shadow: 0 0 3px 3px #CAB748;
+}
+nav .upper-bar .search-form form .btn {
+  background: transparent;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  inset-inline-end: 25px;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  font-size: 18px;
 }
 nav .upper-bar .icons {
   display: -webkit-box;
@@ -437,7 +452,6 @@ nav .nav-bar .nav-flex {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 12px;
-  height: 70px;
 }
 nav .nav-bar .nav-flex .navbar-brand {
   width: 75px;
@@ -860,6 +874,11 @@ nav .nav-bar .nav-flex .main-btn {
   width: 90%;
 }
 
+.categories .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 20px;
+}
 .categories .wrapper li {
   text-align: center;
 }
@@ -1013,10 +1032,12 @@ nav .nav-bar .nav-flex .main-btn {
   font-size: 22px;
 }
 
-.latest-products .latest-products-slider .owl-stage-outer {
+.latest-products-slider .owl-stage-outer,
+.best-seller-slider .owl-stage-outer {
   padding: 12px 0;
 }
-.latest-products .latest-products-slider .owl-stage-outer .item {
+.latest-products-slider .owl-stage-outer .item,
+.best-seller-slider .owl-stage-outer .item {
   width: 95%;
   margin: auto;
 }
@@ -1079,7 +1100,7 @@ nav .nav-bar .nav-flex .main-btn {
 }
 @media screen and (max-width: 991px) {
   nav .upper-bar .navbar-brand img {
-    width: 100px;
+    width: 55px;
   }
   nav .upper-bar .search-form {
     display: none;
@@ -1089,6 +1110,9 @@ nav .nav-bar .nav-flex .main-btn {
   }
   nav .nav-bar .nav-flex .search-form {
     display: block;
+  }
+  header .hero-section {
+    height: auto;
   }
   .col--edit {
     margin-bottom: 30px;
