@@ -2,9 +2,6 @@
   @extend.sec-p;
 
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    gap: 50px 30px;
 
     li {
       // aspect-ratio: 1 / 1;
@@ -12,7 +9,7 @@
 
 
       .image-wrap {
-        height: 250px;
+        // height: 250px;
         aspect-ratio: 1 /1;
         border-radius: 50%;
         overflow: hidden;

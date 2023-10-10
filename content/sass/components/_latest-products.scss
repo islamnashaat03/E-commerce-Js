@@ -1,5 +1,14 @@
 .latest-products {
-  .wrapper {
-    @include grid-wrapper(245px);
+  @extend.sec-p;
+
+  .latest-products-slider {
+    .owl-stage-outer {
+      padding: 12px 0;
+
+      .item {
+        width: 95%;
+        margin: auto;
+      }
+    }
   }
 }

@@ -39,29 +39,155 @@ closeBtn.addEventListener('click', function () {
 
 // INITIALIZE OWL CAROUSEL
 // MAIN SLIDER
-
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
+$('.main-slider').owlCarousel({
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  margin: 10,
+  autoplay: true,
+  animateIn: 'fadeIn',
+  animateOut: 'fadeOut',
+  navText: [
+    "<i class='owl-btn  fa-solid fa-angle-left '></i>",
+    "<i class='owl-btn  fa-solid fa-angle-right'></i>",
+  ],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      dots: true,
+    },
+    600: {
+      items: 1,
+      nav: false,
+      dots: true,
+    },
+    1000: {
+      items: 1,
+      nav: false,
+      dots: true,
+    },
   },
 });
-
+// CATEGORIES  SLIDER
+$('.category-slider').owlCarousel({
+  loop: true,
+  margin: 20,
+  autoplay: true,
+  animateIn: 'fadeIn',
+  animateOut: 'fadeOut',
+  navText: [
+    "<i class='owl-btn  fa-solid fa-angle-left '></i>",
+    "<i class='owl-btn  fa-solid fa-angle-right'></i>",
+  ],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 2,
+      nav: false,
+      dots: true,
+    },
+    600: {
+      items: 4,
+      nav: false,
+      dots: true,
+    },
+    1000: {
+      items: 6,
+      nav: true,
+      dots: true,
+    },
+  },
+});
+// LATEST PRODUCTS SLIDER
+$('.latest-products-slider').owlCarousel({
+  loop: true,
+  margin: 20,
+  autoplay: true,
+  animateIn: 'fadeIn',
+  animateOut: 'fadeOut',
+  navText: [
+    "<i class='owl-btn  fa-solid fa-angle-left '></i>",
+    "<i class='owl-btn  fa-solid fa-angle-right'></i>",
+  ],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      dots: true,
+    },
+    600: {
+      items: 3,
+      nav: false,
+      dots: true,
+    },
+    1000: {
+      items: 4.25,
+      nav: false,
+      dots: true,
+    },
+  },
+});
+// LATEST PRODUCTS SLIDER
+$('.best-seller-slider').owlCarousel({
+  loop: true,
+  margin: 20,
+  autoplay: true,
+  animateIn: 'fadeIn',
+  animateOut: 'fadeOut',
+  navText: [
+    "<i class='owl-btn  fa-solid fa-angle-left '></i>",
+    "<i class='owl-btn  fa-solid fa-angle-right'></i>",
+  ],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      dots: true,
+    },
+    600: {
+      items: 3,
+      nav: false,
+      dots: true,
+    },
+    1000: {
+      items: 4.25,
+      nav: false,
+      dots: true,
+    },
+  },
+});
+// BRANDS  SLIDER
+$('.brands-slider').owlCarousel({
+  loop: true,
+  margin: 20,
+  autoplay: true,
+  animateIn: 'fadeIn',
+  animateOut: 'fadeOut',
+  navText: [
+    "<i class='owl-btn  fa-solid fa-angle-left '></i>",
+    "<i class='owl-btn  fa-solid fa-angle-right'></i>",
+  ],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 2,
+      nav: false,
+      dots: true,
+    },
+    600: {
+      items: 4,
+      nav: false,
+      dots: true,
+    },
+    1000: {
+      items: 6,
+      nav: true,
+      dots: true,
+    },
+  },
+});
 // START FETCHING DATA
 
 async function fetchData(e) {

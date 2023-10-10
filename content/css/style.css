@@ -218,7 +218,7 @@ figure.image-wrap {
   margin: 0;
 }
 
-.sec-p, .categories, footer {
+.sec-p, .best-seller, .latest-products, .categories, footer {
   padding: 50px 0;
 }
 
@@ -357,6 +357,15 @@ figure.image-wrap {
     opacity: 1;
   }
 }
+header .hero-section {
+  height: 100vh;
+  overflow: hidden;
+}
+header .hero-section .image-wrap img {
+  -o-object-position: center;
+     object-position: center;
+}
+
 footer {
   background-color: #000;
 }
@@ -851,16 +860,10 @@ nav .nav-bar .nav-flex .main-btn {
   width: 90%;
 }
 
-.categories .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-  gap: 50px 30px;
-}
 .categories .wrapper li {
   text-align: center;
 }
 .categories .wrapper li .image-wrap {
-  height: 250px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
@@ -988,8 +991,8 @@ nav .nav-bar .nav-flex .main-btn {
 }
 .product-card .sale-per {
   position: absolute;
-  top: -20px;
-  inset-inline-end: -20px;
+  top: -5px;
+  inset-inline-end: -15px;
   background: #CAB748;
   /* padding: 10px; */
   width: 55px;
@@ -1010,10 +1013,12 @@ nav .nav-bar .nav-flex .main-btn {
   font-size: 22px;
 }
 
-.latest-products .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-  gap: 20px;
+.latest-products .latest-products-slider .owl-stage-outer {
+  padding: 12px 0;
+}
+.latest-products .latest-products-slider .owl-stage-outer .item {
+  width: 95%;
+  margin: auto;
 }
 
 @media screen and (max-width: 1920px) {
