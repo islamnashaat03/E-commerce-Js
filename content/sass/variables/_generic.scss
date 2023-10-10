@@ -9,11 +9,14 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   position: relative;
+  font-family: 'Tajawal';
+  font-size: 16px;
+
 
 }
 
 body {
-  // font-family: $fontReadex;
+  font-family: 'Tajawal';
   text-align: start;
   position: relative;
   background-color: #fff;
@@ -113,54 +116,54 @@ ul {
 //   height: 150px;
 // }
 
-// .main-btn {
-//   background-color: $mainColor;
-//   padding: 10px;
-//   min-width: 170px;
-//   width: fit-content;
-//   color: #fff;
-//   text-align: center;
-//   display: block;
-//   transition: $transition;
-//   border: 1px solid $mainColor;
-//   margin: 0 auto 20px;
-//   font-size: 18px;
-//   display: block;
-//   border-radius: 12px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 10px;
-//   position: relative;
-//   z-index: 3;
-//   transition: $transition;
+.main-btn {
+  background-color: $mainColor;
+  padding: 10px;
+  min-width: 170px;
+  width: fit-content;
+  color: #fff;
+  text-align: center;
+  display: block;
+  transition: $transition;
+  border: 1px solid $mainColor;
+  margin: auto;
+  font-size: 18px;
+  display: block;
+  // border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 3;
+  transition: $transition;
 
-//   span {
-//     position: relative;
-//     z-index: 6;
-//     font-size: 12px;
-//   }
+  span {
+    position: relative;
+    z-index: 6;
+    font-size: 12px;
+  }
 
-//   &:hover {
-//     transition: $transition;
-//     background-color: #fff;
-//     color: $mainColor;
-//   }
+  &:hover {
+    transition: $transition;
+    background-color: #fff;
+    color: $mainColor;
+  }
 
-//   &.reversed {
-//     background-color: transparent;
-//     color: #fff;
-//     border: 2px solid #fff;
+  &.reversed {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
 
-//     &:hover {
-//       background-color: $mainColor;
-//       color: #fff;
-//       border: 2px solid $mainColor;
-//     }
-//   }
+    &:hover {
+      background-color: $mainColor;
+      color: #fff;
+      border: 2px solid $mainColor;
+    }
+  }
 
 
-// }
+}
 
 .overlay {
   position: absolute;
@@ -174,55 +177,50 @@ ul {
   z-index: 3;
 }
 
-// .head {
+.head {
+  text-align: start;
+  margin-bottom: 50px;
 
-//   text-align: start;
-//   margin-bottom: 30px;
+  &.centered {
+    text-align: center;
 
-//   &.centered {
-//     text-align: center;
+    h3 {
+      text-align: center;
+      margin: 0 auto 20px auto;
+      // color: $mainColor;
+      font-size: 28px;
+      font-weight: bold;
 
-//     h3 {
-//       text-align: center;
-//       margin: 0 auto 20px auto;
-//       // color: $mainColor;
-//       font-size: 28px;
-//       font-weight: bold;
+    }
 
-//     }
+  }
 
-//     .title_underlined {
-//       &::before {
-//         margin: auto;
-//         left: 0;
-//         right: 0;
-//       }
-//     }
-//   }
+  >h3 {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: start;
+    position: relative;
+    width: fit-content;
+    margin: 0 0 0px 0;
+    gap: 20px;
+    color: #000;
+    padding-bottom: 10px;
+    text-transform: uppercase;
 
-//   >h3 {
-//     font-size: 24px;
-//     line-height: 1;
-//     margin-bottom: 20px;
-//     text-align: start;
-//     position: relative;
-//     width: fit-content;
-//     margin: 0 0 0px 0;
-//     gap: 20px;
-//     color: #000;
-
-//     // &::before {
-//     //   content: "";
-//     //   position: absolute;
-//     //   inset-inline-start: 0;
-//     //   bottom: 0;
-//     //   background-color: $yellwoColor;
-//     //   height: 2px;
-//     //   width: 15%;
-//     //   margin: auto;
-//     //   border-radius: 6px;
-//     // }
-//   }
+    &::before {
+      content: "";
+      position: absolute;
+      inset-inline-start: 0;
+      bottom: 0;
+      background-color: $mainColor;
+      height: 4px;
+      width: 100%;
+      margin: auto;
+      border-radius: 6px;
+    }
+  }
+}
 
 //   .text {
 //     // max-height: 75px;
@@ -542,6 +540,6 @@ figure.image-wrap {
 //   }
 // }
 
-// .sec-p {
-//   padding: 50px 0;
-// }
+.sec-p {
+  padding: 50px 0;
+}

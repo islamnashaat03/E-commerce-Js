@@ -1,0 +1,471 @@
+[
+  {
+    "id": 207,
+    "name": "أجهزة التابلت",
+    "slug": "tablets",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 3799,
+      "date_created": "2022-06-16T10:26:12",
+      "date_created_gmt": "2022-06-16T07:26:12",
+      "date_modified": "2022-06-16T10:26:12",
+      "date_modified_gmt": "2022-06-16T07:26:12",
+      "src": "https://luai-phone.com/wp-content/uploads/2022/06/d6fc1382-c17c-4ba4-bd77-fed7aa814922.png",
+      "name": "d6fc1382-c17c-4ba4-bd77-fed7aa814922",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 12,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/207"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 861,
+    "name": "أحبار",
+    "slug": "%d8%a3%d8%ad%d8%a8%d8%a7%d8%b1",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/861"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 215,
+    "name": "اجهزة الجوال",
+    "slug": "%d8%a7%d8%ac%d9%87%d8%b2%d8%a9-%d8%a7%d9%84%d8%ac%d9%88%d8%a7%d9%84",
+    "parent": 0,
+    "description": "",
+    "display": "products",
+    "image": null,
+    "menu_order": 0,
+    "count": 61,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/215"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 287,
+    "name": "اجهزة الراوتر",
+    "slug": "%d8%a7%d8%ac%d9%87%d8%b2%d8%a9-%d8%a7%d9%84%d8%b1%d8%a7%d9%88%d8%aa%d8%b1",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 7,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/287"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 670,
+    "name": "اجهزة مستعملة",
+    "slug": "%d8%a7%d8%ac%d9%87%d8%b2%d8%a9-%d9%85%d8%b3%d8%aa%d8%b9%d9%85%d9%84%d8%a9",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/670"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 329,
+    "name": "اكسسوارات",
+    "slug": "%d8%a7%d9%83%d8%b3%d8%b3%d9%88%d8%a7%d8%b1%d8%a7%d8%aa-2",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 140,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/329"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 721,
+    "name": "الادوات المكتبية والمدرسية",
+    "slug": "%d8%a7%d9%84%d8%a7%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d9%83%d8%aa%d8%a8%d9%8a%d8%a9-%d9%88%d8%a7%d9%84%d9%85%d8%af%d8%b1%d8%b3%d9%8a%d8%a9",
+    "parent": 0,
+    "description": "",
+    "display": "products",
+    "image": null,
+    "menu_order": 0,
+    "count": 6,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/721"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 342,
+    "name": "الحمايات",
+    "slug": "%d8%a7%d9%84%d8%ad%d9%85%d8%a7%d9%8a%d8%a7%d8%aa",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 40,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/342"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 819,
+    "name": "الطابعات",
+    "slug": "%d8%a7%d9%84%d8%b7%d8%a7%d8%a8%d8%b9%d8%a7%d8%aa",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 3,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/819"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 714,
+    "name": "العروض",
+    "slug": "%d8%a7%d9%84%d8%b9%d8%b1%d9%88%d8%b6",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 3,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/714"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 759,
+    "name": "العودة للمدارس",
+    "slug": "%d8%a7%d9%84%d8%b9%d9%88%d8%af%d8%a9-%d9%84%d9%84%d9%85%d8%af%d8%a7%d8%b1%d8%b3",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 6,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/759"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "name": "الفئات",
+    "slug": "%d8%a7%d9%84%d9%81%d8%a6%d8%a7%d8%aa",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 99,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/15"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 255,
+    "name": "توصيلات كهربائية",
+    "slug": "%d8%aa%d9%88%d8%b5%d9%8a%d9%84%d8%a7%d8%aa-%d9%83%d9%87%d8%b1%d8%a8%d8%a7%d8%a6%d9%8a%d8%a9",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/255"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 762,
+    "name": "ذاكرات الجوال والكاميرا",
+    "slug": "%d8%b0%d8%a7%d9%83%d8%b1%d8%a7%d8%aa-%d8%a7%d9%84%d8%ac%d9%88%d8%a7%d9%84-%d9%88%d8%a7%d9%84%d9%83%d8%a7%d9%85%d9%8a%d8%b1%d8%a7",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 6,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/762"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 320,
+    "name": "ساعات",
+    "slug": "%d8%b3%d8%a7%d8%b9%d8%a7%d8%aa",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 8,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/320"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 249,
+    "name": "سماعات",
+    "slug": "%d8%b3%d9%85%d8%a7%d8%b9%d8%a7%d8%aa-2",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 37,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/249"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 725,
+    "name": "شاحن مكتبي",
+    "slug": "%d8%b4%d8%a7%d8%ad%d9%86-%d9%85%d9%83%d8%aa%d8%a8%d9%8a",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/725"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 782,
+    "name": "قطع غيار",
+    "slug": "%d9%82%d8%b7%d8%b9-%d8%ba%d9%8a%d8%a7%d8%b1",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/782"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 726,
+    "name": "لا سلكي",
+    "slug": "%d9%84%d8%a7-%d8%b3%d9%84%d9%83%d9%8a",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/726"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 760,
+    "name": "مقوي شبكة",
+    "slug": "%d9%85%d9%82%d9%88%d9%8a-%d8%b4%d8%a8%d9%83%d8%a9",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories/760"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://luai-phone.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  }
+]

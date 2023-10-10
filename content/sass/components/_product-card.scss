@@ -1,0 +1,124 @@
+    .product-card {
+        position: relative;
+        border: 1px solid #eee;
+        box-shadow: 0 0 3px 3px #00000017;
+        aspect-ratio: 1 / 1;
+        padding: 10px;
+
+        .image-wrap {
+            height: 200px;
+            aspect-ratio: 1 / 1;
+            margin: 0 auto 15px;
+        }
+
+        .body {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .name {
+                font-size: 24px;
+                color: #000;
+                font-weight: bold;
+                text-transform: capitalize;
+
+            }
+
+            .cat-brand {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #000;
+                font-size: 22px;
+                text-transform: capitalize;
+
+                .brand {
+                    color: $mainColor;
+                    font-size: 18px;
+                }
+
+                .category {}
+            }
+
+            .rate {
+                .fa-star {
+                    color: #eee;
+
+                    &.colored {
+                        color: $mainColor;
+                    }
+                }
+            }
+
+            .wishlist {
+                position: absolute;
+                top: 0;
+                inset-inline-start: 0;
+                background: transparent;
+                border: 1px soldi #000;
+                /* padding: 10px; */
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                z-index: 4;
+                font-size: 22px;
+
+                i {
+                    color: #eee;
+                    font-size: 24px;
+                }
+
+                &.listed-to-wish {
+                    i {
+                        color: $mainColor;
+                    }
+                }
+            }
+
+            .price {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-size: 32px;
+                color: #000;
+                font-weight: bold;
+
+                .final-price {
+                    color: $mainColor;
+                }
+
+                .price-before-sale {
+                    text-decoration: line-through;
+                    color: #bbb;
+                }
+            }
+
+
+
+
+        }
+
+        .sale-per {
+            position: absolute;
+            top: -20px;
+            inset-inline-end: -20px;
+            background: $mainColor;
+            /* padding: 10px; */
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            z-index: 4;
+            font-size: 22px;
+        }
+    }

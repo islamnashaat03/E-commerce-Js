@@ -1,0 +1,43 @@
+.categories {
+  @extend.sec-p;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 50px 30px;
+
+    li {
+      // aspect-ratio: 1 / 1;
+      text-align: center;
+
+
+      .image-wrap {
+        height: 250px;
+        aspect-ratio: 1 /1;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 20px;
+
+        img {
+          transition: $transition;
+          transform: scale(1);
+        }
+      }
+
+      h4 {
+        text-transform: capitalize;
+        font-size: 22px;
+        text-align: center;
+      }
+
+      &:hover {
+        .image-wrap {
+          img {
+            transform: scale(1.3);
+            transition: $transition;
+          }
+        }
+      }
+    }
+  }
+}

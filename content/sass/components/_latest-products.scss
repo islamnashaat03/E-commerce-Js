@@ -1,0 +1,5 @@
+.latest-products {
+  .wrapper {
+    @include grid-wrapper(245px);
+  }
+}

@@ -5,7 +5,9 @@
 
 
 
-
+// LAYOUTS 
+@import "./layout/header";
+@import "./layout/footer";
 
 
 
@@ -14,6 +16,9 @@
 @import "./components/navbar";
 @import "./components/navbar-mobile";
 @import "./components/hero-section";
+@import "./components/categories";
+@import "./components/product-card";
+@import "./components/latest-products";
 // @import "";
 
 

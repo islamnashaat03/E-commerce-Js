@@ -1,169 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- IMPORT FONT  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo&family=Tajawal:wght@400;500;700;800&family=Tangerine&display=swap" rel="stylesheet">
+  <!-- IMPORT BOOTSTRAP GRID LAYOUT  -->
+  <link rel="stylesheet" href="content/css/bootstrap-grid.min.css">
+  <!-- IMPORT FONT AWESOME STYLE  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- IMPORT SWIPER CSS  -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+  <!-- IMPORT MY STYLE CSS  -->
+  <link rel="stylesheet" href="content/css/style.css">
 
-    <!-- IMPORT BOOTSTRAP GRID LAYOUT  -->
-    <link rel="stylesheet" href="content/css/bootstrap-grid.min.css">
-        <!-- IMPORT FONT AWESOME STYLE  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- IMPORT MY STYLE CSS  -->
-    <link rel="stylesheet" href="content/css/style.css">
-    
-    <title>Nashaat E-commerce</title>
+  <title>Nashaat E-commerce</title>
 </head>
+
 <body>
-    
 
-<!-- PAGE PRE  LOADING  -->
 
-<div class="page-loading">
-  <div class="navbar-brand">
-    <svg width="75" height="76" viewBox="0 0 75 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M5.16797 76C3.31794 76 1.71213 76 0 76C0 50.7001 0 25.4327 0 0.0527433C11.0802 0.0527433 22.0902 0.0527433 33.2303 0.0527433C33.2303 4.67658 33.2303 9.26396 33.2303 13.9659C36.161 13.9659 38.9647 13.9659 41.9269 13.9659C41.9269 9.32712 41.9269 4.69481 41.9269 0C53.0168 0 63.9488 0 75 0C75 25.2869 75 50.5477 75 75.9049C73.333 75.9049 71.7388 75.9049 69.9738 75.9049C69.9738 52.367 69.9738 28.891 69.9738 5.29843C62.2882 5.29843 54.7721 5.29843 47.1329 5.29843C47.1329 8.1329 47.1329 10.9791 47.1329 14.033C51.6617 14.033 56.2303 14.033 60.8673 14.033C60.8673 34.7436 60.8673 55.2471 60.8673 75.8528C54.5878 75.8528 48.3837 75.8528 41.9914 75.8528C41.9914 63.9765 41.9914 52.1268 41.9914 40.1482C39.0098 40.1482 36.2132 40.1482 33.2954 40.1482C33.2954 52.046 33.2954 63.9061 33.2954 75.9043C26.9282 75.9043 20.679 75.9043 14.3189 75.9043C14.3189 55.3871 14.3189 34.8341 14.3189 14.1098C18.8586 14.1098 23.3416 14.1098 27.9186 14.1098C27.9186 11.0989 27.9186 8.25792 27.9186 5.29843C20.3742 5.29843 12.8529 5.29843 5.16861 5.29843C5.16797 28.7823 5.16797 52.3 5.16797 76ZM56.0035 19.3731C53.0078 19.3731 50.1905 19.3731 47.2747 19.3731C47.2747 36.6671 47.2747 53.8803 47.2747 71.1255C50.2202 71.1255 53.0735 71.1255 56.0035 71.1255C56.0035 53.8419 56.0035 36.6658 56.0035 19.3731ZM19.2549 19.3184C19.2549 36.7016 19.2549 53.9109 19.2549 71.1183C22.2036 71.1183 25.0067 71.1183 27.8297 71.1183C27.8297 53.7944 27.8297 36.585 27.8297 19.3184C24.9055 19.3184 22.1424 19.3184 19.2549 19.3184ZM41.7091 34.9324C41.7091 29.6548 41.7091 24.5263 41.7091 19.4005C38.8732 19.4005 36.1358 19.4005 33.4429 19.4005C33.4429 24.6585 33.4429 29.7805 33.4429 34.9324C36.2447 34.9324 38.9138 34.9324 41.7091 34.9324Z" fill="url(#paint0_linear_26_276)"/>
-      <defs>
-      <linearGradient id="paint0_linear_26_276" x1="70.2662" y1="-9.47054" x2="19.412" y2="62.6496" gradientUnits="userSpaceOnUse">
-      <stop offset="0.2009" stop-color="#BDA138"/>
-      <stop offset="0.275" stop-color="#D9C955"/>
-      <stop offset="0.307" stop-color="#D5C552"/>
-      <stop offset="0.342" stop-color="#CAB748"/>
-      <stop offset="0.3783" stop-color="#B8A238"/>
-      <stop offset="0.4035" stop-color="#A88E2A"/>
-      <stop offset="0.6104" stop-color="#B1932E"/>
-      <stop offset="0.7872" stop-color="#B49530"/>
-      <stop offset="0.8955" stop-color="#D6C351"/>
-      <stop offset="1" stop-color="#8E711A"/>
-      </linearGradient>
-      </defs>
+  <!-- PAGE PRE  LOADING  -->
+
+  <div class="page-loading">
+    <div class="navbar-brand">
+      <svg width="75" height="76" viewBox="0 0 75 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M5.16797 76C3.31794 76 1.71213 76 0 76C0 50.7001 0 25.4327 0 0.0527433C11.0802 0.0527433 22.0902 0.0527433 33.2303 0.0527433C33.2303 4.67658 33.2303 9.26396 33.2303 13.9659C36.161 13.9659 38.9647 13.9659 41.9269 13.9659C41.9269 9.32712 41.9269 4.69481 41.9269 0C53.0168 0 63.9488 0 75 0C75 25.2869 75 50.5477 75 75.9049C73.333 75.9049 71.7388 75.9049 69.9738 75.9049C69.9738 52.367 69.9738 28.891 69.9738 5.29843C62.2882 5.29843 54.7721 5.29843 47.1329 5.29843C47.1329 8.1329 47.1329 10.9791 47.1329 14.033C51.6617 14.033 56.2303 14.033 60.8673 14.033C60.8673 34.7436 60.8673 55.2471 60.8673 75.8528C54.5878 75.8528 48.3837 75.8528 41.9914 75.8528C41.9914 63.9765 41.9914 52.1268 41.9914 40.1482C39.0098 40.1482 36.2132 40.1482 33.2954 40.1482C33.2954 52.046 33.2954 63.9061 33.2954 75.9043C26.9282 75.9043 20.679 75.9043 14.3189 75.9043C14.3189 55.3871 14.3189 34.8341 14.3189 14.1098C18.8586 14.1098 23.3416 14.1098 27.9186 14.1098C27.9186 11.0989 27.9186 8.25792 27.9186 5.29843C20.3742 5.29843 12.8529 5.29843 5.16861 5.29843C5.16797 28.7823 5.16797 52.3 5.16797 76ZM56.0035 19.3731C53.0078 19.3731 50.1905 19.3731 47.2747 19.3731C47.2747 36.6671 47.2747 53.8803 47.2747 71.1255C50.2202 71.1255 53.0735 71.1255 56.0035 71.1255C56.0035 53.8419 56.0035 36.6658 56.0035 19.3731ZM19.2549 19.3184C19.2549 36.7016 19.2549 53.9109 19.2549 71.1183C22.2036 71.1183 25.0067 71.1183 27.8297 71.1183C27.8297 53.7944 27.8297 36.585 27.8297 19.3184C24.9055 19.3184 22.1424 19.3184 19.2549 19.3184ZM41.7091 34.9324C41.7091 29.6548 41.7091 24.5263 41.7091 19.4005C38.8732 19.4005 36.1358 19.4005 33.4429 19.4005C33.4429 24.6585 33.4429 29.7805 33.4429 34.9324C36.2447 34.9324 38.9138 34.9324 41.7091 34.9324Z"
+          fill="url(#paint0_linear_26_276)" />
+        <defs>
+          <linearGradient id="paint0_linear_26_276" x1="70.2662" y1="-9.47054" x2="19.412" y2="62.6496"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0.2009" stop-color="#BDA138" />
+            <stop offset="0.275" stop-color="#D9C955" />
+            <stop offset="0.307" stop-color="#D5C552" />
+            <stop offset="0.342" stop-color="#CAB748" />
+            <stop offset="0.3783" stop-color="#B8A238" />
+            <stop offset="0.4035" stop-color="#A88E2A" />
+            <stop offset="0.6104" stop-color="#B1932E" />
+            <stop offset="0.7872" stop-color="#B49530" />
+            <stop offset="0.8955" stop-color="#D6C351" />
+            <stop offset="1" stop-color="#8E711A" />
+          </linearGradient>
+        </defs>
       </svg>
-  </div>
-</div>
-
-<!-- START NAVBAR  -->
-<div class="overlay-all overlay"></div>
-<nav>
-  <div class="container">
-    <div class="upper-bar">
-      <a href="#" class="navbar-brand">
-        <!-- LOGO -->
-        <img src="./content/images/logo.svg" alt="">
-      </a>
-      <div class="search-form">
-        <form action="post" >
-          <input type="search" name="" id="">
-        </form>
-        
-      </div>
-      <ul class="icons">
-        <li>
-          <a href="#cart">
-          <i class="fa-solid fa-cart-shopping"></i>
-        </a>
-      </li>
-        <li>
-          <a href="#user">
-            <i class="fa-solid fa-user"></i>
-        </a>
-      </li>
-      </ul>
     </div>
-    <div class="nav-bar">
-      <div class="nav-flex">
+  </div>
+
+  <!-- START NAVBAR  -->
+  <div class="overlay-all overlay"></div>
+  <nav>
+    <div class="container">
+      <div class="upper-bar">
+        <a href="#" class="navbar-brand">
+          <!-- LOGO -->
+          <img src="./content/images/logo.svg" alt="">
+        </a>
         <div class="search-form">
-          <form action="post" >
+          <form action="post">
             <input type="search" name="" id="">
           </form>
-          
+
         </div>
-        <ul class="navbar-links">
+        <ul class="icons">
           <li>
-            <a href="#">
-              Home
-          </a>
-        </li>
+            <a href="#cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
           <li>
-            <a href="#">
-              Home
-          </a>
-        </li>
-          <li>
-            <a href="#">
-              Home
-          </a>
-        </li>
-          <li>
-            <a href="#">
-              Home
-          </a>
-        </li>
-          <li>
-            <a href="#">
-              Home
-          </a>
-        </li>
-          <li>
-            <a href="#">
-              Home
-          </a>
-        </li>
+            <a href="#user">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </li>
         </ul>
-        <div class="toggle-btn">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+      </div>
+      <div class="nav-bar">
+        <div class="nav-flex">
+          <div class="search-form">
+            <form action="post">
+              <input type="search" name="" id="">
+            </form>
+
+          </div>
+          <ul class="navbar-links">
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+          </ul>
+          <div class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="navbar-mobile">
-    <div class="nav-flex">
-      <a href="#" class="navbar-brand">
-        <!-- LOGO -->
-        <img src="./content/images/logo.svg" alt="">
-      </a>
-      <a class="btn close-btn">
-        <i class="fa-solid fa-xmark"></i>
-      </a>
+    <div class="navbar-mobile">
+      <div class="nav-flex">
+        <a href="#" class="navbar-brand">
+          <!-- LOGO -->
+          <img src="./content/images/logo.svg" alt="">
+        </a>
+        <a class="btn close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+      <ul class="mobile-links">
+        <li>
+          <a href="#">
+            Home
+          </a>
+        </li>
+      </ul>
     </div>
-    <ul class="mobile-links">
-      <li>
-        <a href="#">
-          Home
-      </a>
-    </li>
-    </ul>
-  </div>
-  <!-- END NAVBAR MOBILE  -->
-</nav>
+    <!-- END NAVBAR MOBILE  -->
+  </nav>
 
-<main class="home-page">
-  <section class="hero-section">
-  <div class="owl-carousel main-slider">
-    <div class="item">
+  <main class="home-page">
+    <header>
+      <section class="hero-section">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <figure class="image-wrap">
+                <img src="content/images/slide-1.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+  
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div> -->
+          <!-- <div class="swiper-button-next"></div> -->
+  
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+    </header>
+      <!-- START CATEGORIES  -->
+  <section class="categories">
+    <div class="container">
+      <ul class="wrapper">
+        <li>
+          <a href="">
+            <figure class="image-wrap">
+              <img src="content/images/logo.svg" alt="Category Image">
+            </figure>
+            <h4>cat name</h4>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- END CATEGORIES  -->
+  <section class="latest-products swiper-products">
+    <div class="container">
+      <div class="head">
+        <h3>Latest Products</h3>
+      </div>
+      <ul class='swiper-wrapper'>
+        <li class="product-card swiper-slide">
+          <figure class="image-wrap">
+            <img src="content/images/1-2.jpg" alt="Product image">
+          </figure>
+          <div class="body">
+            <h4 class="name">name</h4>
+            <div class="cat-brand">
+              <h5 class="category">category</h5>
+              <span>/</span>
+              <h3 class="brand">brand</h3>
+            </div>
+            <div class="rate">
+              <i class="fa-solid fa-star colored"></i>
+              <i class="fa-solid fa-star colored"></i>
+              <i class="fa-solid fa-star colored "></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+              <div class="price-before-sale">500$</div>
+            <div class="final-price">250$</div>
+            </div>
+            <a href="addto cart" class="btn main-btn"> add to cart </a>
+            <!-- <div class="wishlist listed-to-wish"><i class="fa-solid fa-heart"></i></div> -->
+          </div>
+          <div class="sale-per">15%</div>
+        </li>
+        <li class="product-card swiper-slide">
+          <figure class="image-wrap">
+            <img src="content/images/1-2.jpg" alt="Product image">
+          </figure>
+          <div class="body">
+            <h4 class="name">name</h4>
+            <div class="cat-brand">
+              <h5 class="category">category</h5>
+              <span>/</span>
+              <h3 class="brand">brand</h3>
+            </div>
+            <div class="rate">
+              <i class="fa-solid fa-star colored"></i>
+              <i class="fa-solid fa-star colored"></i>
+              <i class="fa-solid fa-star colored "></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+              <div class="price-before-sale">500$</div>
+            <div class="final-price">250$</div>
+            </div>
+            <a href="addto cart" class="btn main-btn"> add to cart </a>
+            <!-- <div class="wishlist listed-to-wish"><i class="fa-solid fa-heart"></i></div> -->
+          </div>
+          <div class="sale-per">15%</div>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <!-- END CATEGORIES  -->
+  <section class="best-products swiper-2 swiper">
+    <div class="container">
+      <div class="head">
+        <h3>best Seller</h3>
+      </div>
+      <ul class='swiper-wrapper'>
+        <li class="product-card swiper-slide">
+          <figure class="image-wrap">
+            <img src="content/images/1-2.jpg" alt="Product image">
+          </figure>
+          <div class="body">
+            <h4 class="name">name</h4>
+            <div class="cat-brand">
+              <h5 class="category">category</h5>
+              <span>/</span>
+              <h3 class="brand">brand</h3>
+            </div>
+            <div class="rate">
+              <i class="fa-solid fa-star colored"></i>
+              <i class="fa-solid fa-star colored"></i>
+              <i class="fa-solid fa-star colored "></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+              <div class="price-before-sale">500$</div>
+            <div class="final-price">250$</div>
+            </div>
+            <a href="addto cart" class="btn main-btn"> add to cart </a>
+            <!-- <div class="wishlist listed-to-wish"><i class="fa-solid fa-heart"></i></div> -->
+          </div>
+          <div class="sale-per">15%</div>
+        </li>
+        <li class="product-card swiper-slide">
+          <figure class="image-wrap">
+            <img src="content/images/1-2.jpg" alt="Product image">
+          </figure>
+          <div class="body">
+            <h4 class="name">name</h4>
+            <div class="cat-brand">
+              <h5 class="category">category</h5>
+              <span>/</span>
+              <h3 class="brand">brand</h3>
+            </div>
+            <div class="rate">
+              <i class="fa-solid fa-star colored"></i>
+              <i class="fa-solid fa-star colored"></i>
+              <i class="fa-solid fa-star colored "></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+              <div class="price-before-sale">500$</div>
+            <div class="final-price">250$</div>
+            </div>
+            <a href="addto cart" class="btn main-btn"> add to cart </a>
+            <!-- <div class="wishlist listed-to-wish"><i class="fa-solid fa-heart"></i></div> -->
+          </div>
+          <div class="sale-per">15%</div>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <section class="brands categories">
+    <div class="container">
+      <ul class="wrapper">
+        <li>
+          <a href="">
+            <figure class="image-wrap">
+              <img src="content/images/logo.svg" alt="Category Image">
+            </figure>
+            <h4>brand name</h4>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  </main>
+
+
+
+<footer>
+  <div class="container">
+<div class="container">
+  <div class="col-sm-12 col-md-4 col-lg-4">
+    <div class="logo">
       <figure class="image-wrap">
-        <img src="content/images/main-img.jpg" alt="">
+        <img src="content/images/logo.svg" alt="">
       </figure>
     </div>
   </div>
-  </section>
-</main>
-<section class="products">
-  <ul class='wrapper'></ul>
-</section>
+  <div class="col-sm-12 col-md-4 col-lg-4">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">products</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-4">
+    <div class="subcribe">
+      <form action="" class="subscribe-form"></form>
+    </div>
+  </div>
+</div>
+  </div>
+</footer>
 
 
-
-
-
-
-
-<!-- IMPORT JQUERRY  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- IMPORT OWL CAROUSEL  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- iIMPORT MY SCRIPTS  -->
-    <script src="content/js/main.js"></script>
+<!-- IMPORT SWIPER  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js" integrity="sha512-2w85qGM9apXW9EgevsY4S4fnJIUz6U6mXlLbgDKphBuwh7jPQNad70Ll5W+pcIrJ6rIMGpjP0CxYGQwKsynIaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script  src="content/js/main.js"></script>
 </body>
+
 </html>
