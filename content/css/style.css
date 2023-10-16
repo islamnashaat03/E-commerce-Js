@@ -71,7 +71,7 @@ ul {
 .main-btn {
   background-color: #CAB748;
   padding: 10px;
-  min-width: 170px;
+  min-width: 120px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;

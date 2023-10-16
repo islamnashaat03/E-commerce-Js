@@ -7,8 +7,8 @@ const hamburgerIcon = document.querySelector('.nav-bar .toggle-btn'),
   overlayAll = document.querySelector('.overlay-all'),
   closeBtn = document.querySelector('.close-btn');
 let catWrapper = document.querySelector('.categories  .wrapper ');
-let apiUrl = '';
-let apiUrlCategories = '../cat-api.json';
+let apiUrl = '../api.json';
+// let apiUrlCategories = '../cat-api.json';
 // PRE LOADING Function
 setTimeout(function () {
   // loadingDiv.style.opacity = '0';
@@ -66,36 +66,7 @@ $('.main-slider').owlCarousel({
     },
   },
 });
-// CATEGORIES  SLIDER
-// $('.category-slider').owlCarousel({
-//   loop: true,
-//   margin: 20,
-//   autoplay: true,
-//   animateIn: 'fadeIn',
-//   animateOut: 'fadeOut',
-//   navText: [
-//     "<i class='owl-btn  fa-solid fa-angle-left '></i>",
-//     "<i class='owl-btn  fa-solid fa-angle-right'></i>",
-//   ],
-//   responsiveClass: true,
-//   responsive: {
-//     0: {
-//       items: 2,
-//       nav: false,
-//       dots: true,
-//     },
-//     600: {
-//       items: 4,
-//       nav: false,
-//       dots: true,
-//     },
-//     1000: {
-//       items: 6,
-//       nav: true,
-//       dots: true,
-//     },
-//   },
-// });
+
 // LATEST PRODUCTS SLIDER
 $('.latest-products-slider').owlCarousel({
   loop: true,
@@ -212,6 +183,6 @@ function showData(datas) {
     // </li>`;
   });
 }
-fetchData(apiUrlCategories);
+fetchData(apiUrl);
 
 // SHOW CATEGORIES
