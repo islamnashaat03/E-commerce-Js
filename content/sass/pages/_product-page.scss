@@ -1,0 +1,12 @@
+.products-page {
+  .products-wrapper {
+    @include grid-wrapper(245px);
+    gap: 40px 20px;
+
+    .product-card .image-wrap {
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}

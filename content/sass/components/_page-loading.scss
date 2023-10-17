@@ -1,115 +1,69 @@
 .page-loading {
   position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
-  @include flex-d(center, center);
-  background-color: #fff;
-  transition: $transition;
-  display: none;
+  background-color: #000;
+  z-index: 9999999955;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // display: none;
 
   .navbar-brand {
-    width: 350px;
-    height: 200px;
-    margin: auto;
-    @include flex-d(center, center);
+    display: flex;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 250px;
+    position: relative;
+
+
+
+
+
 
     svg {
-      width: 100%;
-      height: 100%;
-
       path {
-        &:not(:first-child) {
-          stroke: #F6BD0B;
-          fill: #F6BD0B;
-          opacity: 0;
-        }
-
-        &:nth-child(2) {
-          -webkit-animation: 1.2s linear bounce forwards;
-          animation: 1.2s linear bounce forwards;
-        }
-
-        &:first-child {
-          stroke: #034E43;
-          stroke-width: 3px;
-          fill: transparent;
-          stroke-dasharray: 679;
-          stroke-dashoffset: 679;
-          -webkit-animation: 2s linear animateLogo 0.5s forwards, 1s logoFill 3s linear forwards;
-          animation: 2s linear animateLogo 0.5s forwards, 1s logoFill 3s linear forwards;
-        }
-
-        &:nth-child(4) {
-          -webkit-animation: 2s linear bounce forwards 1s;
-          animation: 2s linear bounce forwards 1s;
-        }
-
-        &:nth-child(5) {
-          -webkit-animation: 2s linear bounce forwards 1.4s;
-          animation: 2s linear bounce forwards 1.4s;
-        }
-
-        &:nth-child(3) {
-          -webkit-animation: 2s linear bounce forwards 1.6s;
-          animation: 2s linear bounce forwards 1.6s;
-        }
+        stroke-width: 3px;
+        fill: rgba(0, 0, 0, 0);
+        stroke: #988d74;
+        stroke-dasharray: 15824;
+        stroke-dashoffset: 15824;
+        animation: fadeLogo 3s cubic-bezier(1, 0.6, 0.8, 0.8) forwards, fillLogo 1.5s forwards 2.5s;
       }
     }
   }
 }
 
-
-
-@-webkit-keyframes animateLogo {
+@keyframes fadeLogo {
   to {
     stroke-dashoffset: 0;
   }
+
 }
 
-@keyframes animateLogo {
+@keyframes fillLogo {
   to {
-    stroke-dashoffset: 0;
+    fill: url(#paint0_linear_1_4)
   }
+
 }
 
-@-webkit-keyframes logoFill {
+@keyframes fillLogo2 {
   to {
-    fill: #034E43;
+    fill: #863565;
   }
+
 }
 
-@keyframes logoFill {
-  to {
-    fill: #034E43;
-  }
-}
 
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    opacity: 0;
-  }
-
-  25% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    opacity: 0.3;
-  }
-
-  50% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-    opacity: 0.6;
-  }
-
+@keyframes move {
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
+    offset-distance: 100%;
   }
+
 }

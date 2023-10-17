@@ -4,6 +4,7 @@
         box-shadow: 0 0 3px 3px #00000017;
         aspect-ratio: 1 / 1;
         padding: 10px;
+        height: auto;
 
         .image-wrap {
             height: 200px;
@@ -22,6 +23,8 @@
                 color: #000;
                 font-weight: bold;
                 text-transform: capitalize;
+                height: 40px;
+                overflow: hidden;
 
             }
 
@@ -38,7 +41,12 @@
                     font-size: 18px;
                 }
 
-                .category {}
+
+            }
+
+            .text {
+                height: 115px;
+                overflow: hidden;
             }
 
             .rate {

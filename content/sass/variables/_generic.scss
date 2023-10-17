@@ -15,6 +15,21 @@ html {
 
 }
 
+.swiper {
+  padding: 10px 0 50px 0;
+
+
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+
+  &.swiper-pagination-bullet-active {
+    background-color: $mainColor;
+  }
+}
+
 body {
   font-family: 'Tajawal';
   text-align: start;
@@ -313,9 +328,9 @@ ul {
 //   cursor: pointer;
 // }
 
-// .padd-page {
-//   padding-top: 50px;
-// }
+.padd-page {
+  padding: 50px 0;
+}
 
 // @keyframes typewriter {
 //   from {

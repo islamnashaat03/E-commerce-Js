@@ -13,6 +13,18 @@ html {
   font-size: 16px;
 }
 
+.swiper {
+  padding: 10px 0 50px 0;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #CAB748;
+}
+
 body {
   font-family: "Tajawal";
   text-align: start;
@@ -188,6 +200,10 @@ ul {
   transition: all 0.5s ease-in-out;
 }
 
+.padd-page {
+  padding: 50px 0;
+}
+
 .toggle-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,11 +241,13 @@ figure.image-wrap {
 .page-loading {
   position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
+  background-color: #000;
+  z-index: 9999999955;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,122 +257,69 @@ figure.image-wrap {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  display: none;
 }
 .page-loading .navbar-brand {
-  width: 350px;
-  height: 200px;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
           justify-content: center;
+  width: 250px;
+  position: relative;
 }
-.page-loading .navbar-brand svg {
-  width: 100%;
-  height: 100%;
-}
-.page-loading .navbar-brand svg path:not(:first-child) {
-  stroke: #F6BD0B;
-  fill: #F6BD0B;
-  opacity: 0;
-}
-.page-loading .navbar-brand svg path:nth-child(2) {
-  -webkit-animation: 1.2s linear bounce forwards;
-  animation: 1.2s linear bounce forwards;
-}
-.page-loading .navbar-brand svg path:first-child {
-  stroke: #034E43;
+.page-loading .navbar-brand svg path {
   stroke-width: 3px;
-  fill: transparent;
-  stroke-dasharray: 679;
-  stroke-dashoffset: 679;
-  -webkit-animation: 2s linear animateLogo 0.5s forwards, 1s logoFill 3s linear forwards;
-  animation: 2s linear animateLogo 0.5s forwards, 1s logoFill 3s linear forwards;
-}
-.page-loading .navbar-brand svg path:nth-child(4) {
-  -webkit-animation: 2s linear bounce forwards 1s;
-  animation: 2s linear bounce forwards 1s;
-}
-.page-loading .navbar-brand svg path:nth-child(5) {
-  -webkit-animation: 2s linear bounce forwards 1.4s;
-  animation: 2s linear bounce forwards 1.4s;
-}
-.page-loading .navbar-brand svg path:nth-child(3) {
-  -webkit-animation: 2s linear bounce forwards 1.6s;
-  animation: 2s linear bounce forwards 1.6s;
+  fill: rgba(0, 0, 0, 0);
+  stroke: #988d74;
+  stroke-dasharray: 15824;
+  stroke-dashoffset: 15824;
+  -webkit-animation: fadeLogo 3s cubic-bezier(1, 0.6, 0.8, 0.8) forwards, fillLogo 1.5s forwards 2.5s;
+          animation: fadeLogo 3s cubic-bezier(1, 0.6, 0.8, 0.8) forwards, fillLogo 1.5s forwards 2.5s;
 }
 
-@-webkit-keyframes animateLogo {
+@-webkit-keyframes fadeLogo {
   to {
     stroke-dashoffset: 0;
   }
 }
-@keyframes animateLogo {
+
+@keyframes fadeLogo {
   to {
     stroke-dashoffset: 0;
   }
 }
-@-webkit-keyframes logoFill {
+@-webkit-keyframes fillLogo {
   to {
-    fill: #034E43;
+    fill: url(#paint0_linear_1_4);
   }
 }
-@keyframes logoFill {
+@keyframes fillLogo {
   to {
-    fill: #034E43;
+    fill: url(#paint0_linear_1_4);
   }
 }
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    opacity: 0;
-  }
-  25% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    opacity: 0.3;
-  }
-  50% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
+@-webkit-keyframes fillLogo2 {
+  to {
+    fill: #863565;
   }
 }
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    opacity: 0;
+@keyframes fillLogo2 {
+  to {
+    fill: #863565;
   }
-  25% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    opacity: 0.3;
-  }
-  50% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-    opacity: 0.6;
-  }
+}
+@-webkit-keyframes move {
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
+    offset-distance: 100%;
+  }
+}
+@keyframes move {
+  100% {
+    offset-distance: 100%;
   }
 }
 header .hero-section {
@@ -916,6 +881,7 @@ nav .nav-bar .nav-flex .main-btn {
           box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.0901960784);
   aspect-ratio: 1/1;
   padding: 10px;
+  height: auto;
 }
 .product-card .image-wrap {
   height: 200px;
@@ -938,6 +904,8 @@ nav .nav-bar .nav-flex .main-btn {
   color: #000;
   font-weight: bold;
   text-transform: capitalize;
+  height: 40px;
+  overflow: hidden;
 }
 .product-card .body .cat-brand {
   display: -webkit-box;
@@ -954,6 +922,10 @@ nav .nav-bar .nav-flex .main-btn {
 .product-card .body .cat-brand .brand {
   color: #CAB748;
   font-size: 18px;
+}
+.product-card .body .text {
+  height: 115px;
+  overflow: hidden;
 }
 .product-card .body .rate .fa-star {
   color: #eee;
@@ -1045,6 +1017,17 @@ nav .nav-bar .nav-flex .main-btn {
   margin: auto;
 }
 
+.products-page .products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 20px;
+  gap: 40px 20px;
+}
+.products-page .products-wrapper .product-card .image-wrap img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 @media screen and (max-width: 1920px) {
   .nav-bar .nav-flex .menu-btn {
     display: none;
@@ -1128,5 +1111,9 @@ nav .nav-bar .nav-flex .main-btn {
 @media screen and (max-width: 767px) {
   .product-card .sale-per {
     inset-inline-end: 0;
+  }
+  nav .nav-bar .nav-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */
