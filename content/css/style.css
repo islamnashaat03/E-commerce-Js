@@ -1050,6 +1050,12 @@ nav .nav-bar .nav-flex .main-btn {
   width: 100%;
   -webkit-padding-start: 20px;
           padding-inline-start: 20px;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  outline: none;
+}
+.form-wrapper form .input-wrap input:not([type=submit]):focus {
+  border-bottom: 1px solid #CAB748;
 }
 .form-wrapper form .input-wrap input:focus {
   outline-color: #CAB748;
@@ -1164,6 +1170,15 @@ nav .nav-bar .nav-flex .main-btn {
   }
 }
 @media screen and (max-width: 767px) {
+  .form-wrapper {
+    width: 100%;
+  }
+  .form-wrapper form {
+    width: 90%;
+  }
+  .form-wrapper .signup span {
+    font-size: 16px;
+  }
   .product-card .sale-per {
     inset-inline-end: 0;
   }

@@ -24,9 +24,19 @@
         min-height: 55px;
         font-size: 18px;
 
+
         &:not([type="submit"]) {
           width: 100%;
           padding-inline-start: 20px;
+          border: 0;
+          border-bottom: 1px solid #eee;
+          outline: none;
+          transition: $transition3;
+
+          &:focus {
+            border-bottom: 1px solid $mainColor;
+            transition: $transition3;
+          }
         }
 
         &:focus {
