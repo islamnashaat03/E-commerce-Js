@@ -16,7 +16,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- IMPORT SWIPER CSS  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.css" integrity="sha512-cAtZ0Luj6XlQ7YGgi5mPW0szI2z/2+btPjOqVEqK3z4h1/qojUwvQyTcocgKKOFv8noUFH5GOuhheX7PeDwwPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- IMPORT MY STYLE CSS  -->
   <link rel="stylesheet" href="content/css/style.css">
 
@@ -58,67 +58,49 @@
   <nav>
     <div class="container">
       <div class="upper-bar">
-        <a href="#" class="navbar-brand">
-          <!-- LOGO -->
-          <img src="./content/images/logo.svg" alt="">
-        </a>
-        <div class="search-form">
-          <form action="post">
-            <input type="search" name="" id="" placeholder="Search For Products">
-            <button type="submit " class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-
-        </div>
-        <ul class="icons">
-          <a href="login.html" class="btn main-btn">Log In</a>
-          <li>
-            <a href="#cart">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#user">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          </li>
-        </ul>
+        
+        
+        
       </div>
       <div class="nav-bar">
         <div class="nav-flex">
-          <div class="search-form">
-            <form action="post">
-              <input type="search" name="" id="">
-            </form>
-
-          </div>
+          <a href="index.html" class="navbar-brand">
+            <!-- LOGO -->
+            <img src="./content/images/logo.svg" alt="">
+          </a>
           <ul class="navbar-links">
             <li>
-              <a href="#">
+              <a href="index.html">
                 Home
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="products.html">
                 Products
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Home
               </a>
             </li>
           </ul>
           
+          <ul class="icons">
+            <a href="login.html" class="btn main-btn">Log In</a>
+            
+            <li>
+              <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#user">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="search-form">
+            <form action="post">
+              <input type="text" name="" id="" placeholder="Search For Products">
+              <button type="submit " class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
           <div class="toggle-btn">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -139,8 +121,13 @@
       </div>
       <ul class="mobile-links">
         <li>
-          <a href="#">
+          <a href="index.html">
             Home
+          </a>
+        </li>
+        <li>
+          <a href="products.html">
+            Products
           </a>
         </li>
       </ul>
@@ -150,37 +137,57 @@
 
   <main class="home-page">
     <header>
-      <section class="hero-section">
-        <div class="main-slider owl-carousel">
-            <div class="item">
+      <section class="hero-section main-slider">
+        <div class="swiper-wrapper ">
+            <div class="item swiper-slide">
               <figure class="image-wrap">
                 <img src="content/images/slide-1.jpg" alt="">
               </figure>
             </div>
-            <div class="item">
+            <div class="item swiper-slide">
               <figure class="image-wrap">
                 <img src="content/images/slide-2.jpg" alt="">
               </figure>
             </div>
-            <div class="item">
+            <div class="item swiper-slide">
               <figure class="image-wrap">
                 <img src="content/images/slide-3.jpg" alt="">
               </figure>
             </div>
-            <div class="item">
+            <div class="item swiper-slide">
               <figure class="image-wrap">
                 <img src="content/images/slide-4.png" alt="">
               </figure>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
       </section>
     </header>
       <!-- START CATEGORIES  -->
   <section class="categories">
     <div class="container">
-      <ul class="  wrapper">
+      <div class="head">
+        <h3>Categories</h3>
+      </div>
+      <!-- Slider main container -->
+      <div class="cat-swiper">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper">
+          <!-- Slides -->
 
-      </ul>
+        </ul>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination">
+          <span class="swiper-pagination-bullet"></span>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
     </div>
   </section>
   <!-- END CATEGORIES  -->
@@ -315,6 +322,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- IMPORT owl carousel  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- IMPORT SWIPER  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js" integrity="sha512-2w85qGM9apXW9EgevsY4S4fnJIUz6U6mXlLbgDKphBuwh7jPQNad70Ll5W+pcIrJ6rIMGpjP0CxYGQwKsynIaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script  src="content/js/fetch.js"></script>
   <script  src="content/js/main.js"></script>
 </body>
 

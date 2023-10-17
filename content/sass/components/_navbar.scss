@@ -13,36 +13,7 @@ nav {
       width: 250px;
     }
 
-    .search-form {
-      flex: 0 0 65%;
 
-      form {
-        width: 100%;
-        position: relative;
-
-        input {
-          width: 100%;
-          min-height: 45px;
-          padding-inline-start: 15px;
-
-          &:focus {
-            border: 1px solid $mainColor;
-            outline: 0;
-            box-shadow: 0 0 3px 3px $mainColor;
-          }
-        }
-
-        .btn {
-          background: transparent;
-          color: #000;
-          position: absolute;
-          top: 50%;
-          inset-inline-end: 25px;
-          transform: translate(0px, -50%);
-          font-size: 18px;
-        }
-      }
-    }
 
     .icons {
       @include flex-d(center, space-between);
@@ -63,12 +34,12 @@ nav {
       .navbar-brand {
         width: 75px;
         position: relative;
-        top: 18px;
+        // top: 18px;
       }
 
-      .search-form {
-        display: none
-      }
+      // .search-form {
+      //   display: none
+      // }
 
       .navbar-links {
         @include flex-d(center, center);
@@ -84,12 +55,13 @@ nav {
             @include flex-d(center, center);
             gap: 3px;
             padding: 5px 0;
-            font-size: 18px;
+            font-size: 22px;
             transition: $transition;
             border-radius: 6px;
             font-weight: bold;
             color: #fff;
             gap: 10px;
+            text-transform: capitalize;
 
             // &::before {
             //   content: "";
@@ -272,6 +244,44 @@ nav {
           }
 
 
+        }
+
+        li {
+          a {
+            font-size: 22px;
+          }
+        }
+
+      }
+
+      .search-form {
+        // flex: 0 0 65%;
+
+        form {
+          width: 100%;
+          position: relative;
+
+          input {
+            width: 100%;
+            min-height: 45px;
+            padding-inline-start: 15px;
+
+            &:focus {
+              border: 1px solid $mainColor;
+              outline: 0;
+              box-shadow: 0 0 3px 3px $mainColor;
+            }
+          }
+
+          .btn {
+            background: transparent;
+            color: #000;
+            position: absolute;
+            top: 50%;
+            inset-inline-end: 10px;
+            transform: translate(0px, -50%);
+            font-size: 18px;
+          }
         }
       }
 

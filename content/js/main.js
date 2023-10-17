@@ -6,9 +6,10 @@ const hamburgerIcon = document.querySelector('.nav-bar .toggle-btn'),
   navbarMobile = document.querySelector('.navbar-mobile'),
   overlayAll = document.querySelector('.overlay-all'),
   closeBtn = document.querySelector('.close-btn');
-let catWrapper = document.querySelector('.categories  .wrapper ');
-let apiUrl = '../api.json';
-// let apiUrlCategories = '../cat-api.json';
+
+let catWrapper = document.querySelector(
+  '.categories .cat-swiper .swiper-wrapper'
+);
 // PRE LOADING Function
 setTimeout(function () {
   // loadingDiv.style.opacity = '0';
@@ -18,6 +19,76 @@ setTimeout(function () {
     loadingDiv.style.display = 'none';
   }, 100);
 }, 4000);
+
+// let productsJson = '/api.json';
+// async function fetchData() {
+//   try {
+//     let result = await fetch(productsJson);
+//     let products = await result.json();
+//     console.log(products);
+//     showData(products);
+//   } catch {
+//     console.log('Error fetching');
+//   }
+// }
+// function showData(products) {
+//   products.forEach((product) => {
+//     catWrapper.innerHTML += `<li class="product-card">
+//     <figure class="image-wrap">
+//       <img src="${product.image}" alt="Product image">
+//     </figure>
+//     <div class="body">
+//       <h4 class="name">${product.title}</h4>
+//       <div class="cat-brand">
+//         <h5 class="category">${product.category}</h5>
+//         <span>/</span>
+//         <h3 class="brand">${product.brand}</h3>
+//       </div>
+//       <div class="text"> ${product.description} </div>
+//       <div class="rate">
+//         <i class="fa-solid fa-star colored"></i>
+//         <i class="fa-solid fa-star colored"></i>
+//         <i class="fa-solid fa-star colored "></i>
+//         <i class="fa-solid fa-star"></i>
+//         <i class="fa-solid fa-star"></i>
+//       </div>
+//       <div class="price">
+//         <div class="price-before-sale">500$</div>
+//       <div class="final-price">${product.price}$</div>
+//       </div>
+//       <a href="addto cart" class="btn main-btn"> add to cart </a>
+//       <!-- <div class="wishlist listed-to-wish"><i class="fa-solid fa-heart"></i></div> -->
+//     </div>
+//     <div class="sale-per">15%</div>
+//   </li>`;
+//   });
+// }
+// fetchData();
+
+// fetch categories from api
+
+let catJson = '/cat.json';
+async function fetchCatData() {
+  try {
+    let result = await fetch(catJson);
+    let products = await result.json();
+    console.log(products);
+    showCatData(products);
+  } catch {
+    console.log('Error fetching');
+  }
+}
+function showCatData(categories) {
+  categories.forEach((category) => {
+    catWrapper.innerHTML += `<li class="item swiper-slide">
+    <figure class="image-wrap">
+      <img src="${category.image}" alt="Category Image">
+    </figure>
+    <h4>${category.catname} </h4>
+</li>`;
+  });
+}
+fetchCatData();
 
 // NAV BAR MOBILE OPEN AN CLOSE
 function closeNavBar() {
@@ -35,154 +106,55 @@ closeBtn.addEventListener('click', function () {
   closeNavBar();
 });
 
-// INITIALIZE OWL CAROUSEL
-// MAIN SLIDER
-$('.main-slider').owlCarousel({
-  loop: true,
-  margin: 10,
+// INITIALIZE MAIN SWIPER
+var mainSlider = new Swiper('.main-slider', {
+  speed: 400,
+  spaceBetween: 10,
   autoplay: true,
-  animateIn: 'fadeIn',
-  animateOut: 'fadeOut',
-  navText: [
-    "<i class='owl-btn  fa-solid fa-angle-left '></i>",
-    "<i class='owl-btn  fa-solid fa-angle-right'></i>",
-  ],
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-      nav: false,
-      dots: false,
-    },
-    600: {
-      items: 1,
-      nav: false,
-      dots: false,
-    },
-    1000: {
-      items: 1,
-      nav: false,
-      dots: false,
-    },
+  loop: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });
 
-// LATEST PRODUCTS SLIDER
-$('.latest-products-slider').owlCarousel({
+// INITIALIZE CATEGORY SWIPER
+var catSwiper = new Swiper('.cat-swiper', {
+  speed: 400,
   loop: true,
-  margin: 20,
-  autoplay: true,
-  animateIn: 'fadeIn',
-  animateOut: 'fadeOut',
-  navText: [
-    "<i class='owl-btn  fa-solid fa-angle-left '></i>",
-    "<i class='owl-btn  fa-solid fa-angle-right'></i>",
-  ],
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-      nav: false,
-      dots: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-    600: {
-      items: 3,
-      nav: false,
-      dots: true,
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
-    1000: {
-      items: 4.25,
-      nav: false,
-      dots: true,
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 5,
+      spaceBetween: 40,
     },
   },
+  init: false,
 });
-// LATEST PRODUCTS SLIDER
-$('.best-seller-slider').owlCarousel({
-  loop: true,
-  margin: 20,
-  autoplay: true,
-  animateIn: 'fadeIn',
-  animateOut: 'fadeOut',
-  navText: [
-    "<i class='owl-btn  fa-solid fa-angle-left '></i>",
-    "<i class='owl-btn  fa-solid fa-angle-right'></i>",
-  ],
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-      nav: false,
-      dots: true,
-    },
-    600: {
-      items: 3,
-      nav: false,
-      dots: true,
-    },
-    1000: {
-      items: 4.25,
-      nav: false,
-      dots: true,
-    },
-  },
+catSwiper.on('init', function () {
+  console.log('cat inii');
 });
-// BRANDS  SLIDER
-$('.brands-slider').owlCarousel({
-  loop: true,
-  margin: 20,
-  autoplay: true,
-  animateIn: 'fadeIn',
-  animateOut: 'fadeOut',
-  navText: [
-    "<i class='owl-btn  fa-solid fa-angle-left '></i>",
-    "<i class='owl-btn  fa-solid fa-angle-right'></i>",
-  ],
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 2,
-      nav: false,
-      dots: true,
-    },
-    600: {
-      items: 4,
-      nav: false,
-      dots: true,
-    },
-    1000: {
-      items: 6,
-      nav: true,
-      dots: true,
-    },
-  },
-});
-$('.category-slider').on('initialized.owl.carousel', function () {});
-
-// START FETCHING DATA
-async function fetchData(e) {
-  try {
-    let result = await fetch(e);
-    let datas = await result.json();
-    showData(datas);
-  } catch {
-    console.log('Data Error');
-  }
-}
-
-function showData(datas) {
-  datas.forEach((data) => {
-    console.log(data);
-    // catWrapper.innerHTML += `<li>
-    //   <a href="${data.href}">
-    //     <figure class="image-wrap">
-    //       <img src="${data.image.src}" alt="Category Image">
-    //     </figure>
-    //     <h4>${data.name}</h4>
-    //   </a>
-    // </li>`;
-  });
-}
-fetchData(apiUrl);
-
-// SHOW CATEGORIES
+catSwiper.init();

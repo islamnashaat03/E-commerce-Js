@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "catname": "laptop",
+    "image": "/content/json-images/laptops.png"
+  },
+  {
+    "id": 2,
+    "catname": "mobiles",
+    "image": "/content/json-images/mobiles.jpg"
+  },
+  {
+    "id": 3,
+    "catname": "tablets",
+    "image": "/content/json-images/tab-cat.png"
+  },
+
+  {
+    "id": 4,
+    "catname": "accessories",
+    "image": "/content/json-images/22.png"
+  },
+  {
+    "id": 5,
+    "catname": "Screens",
+    "image": "/content/json-images/screens.jpg"
+  },
+  {
+    "id": 6,
+    "catname": "smart watches",
+    "image": "/content/json-images/watches.jpg"
+  }
+]

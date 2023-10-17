@@ -39,10 +39,7 @@
       }
 
 
-      .toggle-btn {
-        display: flex;
 
-      }
 
       .contact-btn {
         display: none;
@@ -104,6 +101,11 @@
 
         }
 
+        .toggle-btn {
+          display: flex;
+
+        }
+
         .search-form {
           display: block;
         }
@@ -130,6 +132,10 @@
 
 }
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+  .product-card .sale-per {
+    inset-inline-end: 0;
+  }
+}
 
 @media screen and (max-width:576px) {}

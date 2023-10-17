@@ -1,7 +1,19 @@
 header {
+
   .hero-section {
     height: 100vh;
     overflow: hidden;
+    position: relative;
+
+    .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+
+      &.swiper-pagination-bullet-active {
+        background-color: #fff;
+      }
+    }
+
 
     .image-wrap {
 
