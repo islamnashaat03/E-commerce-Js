@@ -1,0 +1,51 @@
+.form-wrapper {
+  width: 75%;
+  margin: auto;
+  gap: 20px;
+  width: 50%;
+  margin: auto;
+  border-radius: 6px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 50px 20px;
+
+  form {
+    width: 60%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-bottom: 20px;
+
+    .input-wrap {
+      input {
+        min-height: 55px;
+        font-size: 18px;
+
+        &:not([type="submit"]) {
+          width: 100%;
+          padding-inline-start: 20px;
+        }
+
+        &:focus {
+          outline-color: $mainColor;
+        }
+      }
+    }
+  }
+
+  .signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 22px;
+
+    a {
+      font-weight: bold;
+      color: $mainColor;
+    }
+  }
+}
