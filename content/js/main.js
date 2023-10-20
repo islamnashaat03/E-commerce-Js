@@ -22,7 +22,7 @@ const hamburgerIcon = document.querySelector('.nav-bar .toggle-btn'),
 
 let productsWrapper = document.querySelector('.products-wrapper');
 
-let productsJson = '/api.json';
+let productsJson = '../../api.json';
 async function fetchData() {
   try {
     let result = await fetch(productsJson);
@@ -69,7 +69,7 @@ fetchData();
 
 // fetch categories from api
 
-let catJson = '/cat.json';
+let catJson = '../../cat.json';
 async function fetchCatData() {
   try {
     let result = await fetch(catJson);
